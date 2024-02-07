@@ -71,18 +71,7 @@
                                 </p>
                             </div>
 
-                            <!-- 显示GitHub Star数量 -->
-                            <div id="star-count"> ⭐ Stars: Loading...</div>
-
-                            <script>
-                            fetch('https://api.github.com/repos/yding25/BestMan_Real')
-                            .then(response => response.json())
-                            .then(data => {
-                                const stars = data.stargazers_count;
-                                document.getElementById('star-count').innerHTML = `<i class="fas fa-star" style="color: #f9d71c;"></i>&nbsp;Stars: ${stars}`;
-                            })
-                            .catch(error => console.error('Error:', error));
-                        </script>
+                        ![GitHub stars](https://img.shields.io/github/stars/yding25/BestMan_Real?style=social)
 
                         </div>
 
